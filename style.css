@@ -11,15 +11,19 @@
     display: grid;
     grid-template-columns: 300px 700px;
     min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
 }
 .left-section{
     grid-column: span 1;
-    background-color: rgb(54, 49, 73);
+    background-color: #212024;
+    color: #fff;
 }
 
 .left-content{
     padding: 1rem;
 }
+
 .profile-image{
     width: 60%;
     display: block;
@@ -32,15 +36,117 @@
     font-weight: 700;
     text-align: center;
     padding: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
 }
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.description{
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+.list-icon{
+    display: flex;
+    justify-content: space-evenly;
+    width:auto;
+    padding: .5rem 1rem;
+}
+.social-media{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+.contact{
+    padding: 5%;
+}
+.contact ul{
+    position: relative;
+}
+.contact ul li{
+    position: relative;
+    list-style:none;
+    margin: 10px;
+    cursor: pointer;
+}
+.contact ul li .icon{
+    display: inline-block;
+    width: 25px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.skill-progress{
+    font-size: 0.80rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.70rem;
+    font-weight: 0.70rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.skill-item{
+    padding: 5px;
+}
+.progress-bar{
+    border: 1px  solid white ;
+    background-color: #fff;
+    height: 4px;
+}
+
+/* .progress-bar>div{
+    border: 1px  solid white;
+    background-color: #fff;
+    height: 4px;
+} */
 .right-section{
     grid-column: span 1/ span 2;
     background-color: #f7f7f7;
     width: 900px;
 }
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
 
+.para{
+    padding: 0.5rem;
+}
+.box{
+    display: flex;
+}
+.box > .text{
+    padding: 0.5rem;
+}
+h5{
+    padding: 3px;
+}
+h6{
+    /*     margin-top: 10px; */
+  padding: 5px;
+}
+.box .year{
+    min-width: 150px;
+}
 @media screen and(max-width:674px) {
     .main-content{
-        grid-column: repet(1, fr);
+        grid-template-columns: repet(1, fr);
+        width: 90%;
+        min-height: 1000px;
     }
 }
