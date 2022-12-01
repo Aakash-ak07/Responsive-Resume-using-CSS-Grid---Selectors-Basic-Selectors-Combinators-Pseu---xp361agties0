@@ -7,35 +7,42 @@
 }
 
 /* Write CSS code below */
-.main-content{
+body{
+    background-color: #add8e6;
+}
+
+.main-content {
     display: grid;
     grid-template-columns: 300px 700px;
     min-height: 1000px;
     width: 90%;
     margin: 20px auto;
-}
+  }
 .left-section{
     grid-column: span 1;
-    background-color: #212024;
+    background-color: #003147;
     color: #fff;
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color: #fff;
 }
 
 .left-content{
     padding: 1rem;
 }
-
 .profile-image{
-    width: 60%;
     display: block;
     margin: auto;
+    border: 5px white solid;
     border-radius: 30%;
-    border: 5px solid white;
+    width: 60%;
 }
 .name{
     font-size: 1.2rem;
     font-weight: 700;
-    text-align: center;
     padding: 0.8rem;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.02px;
 }
@@ -43,76 +50,66 @@
     font-size: 1rem;
     text-align: center;
     text-transform: uppercase;
-    padding-bottom: 5px;
+    padding-bottom: 0.5rem;
 }
 .description{
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     text-align: center;
     padding: 1rem 1rem;
 }
-.list-icon{
+.social-media{
     display: flex;
     justify-content: space-evenly;
-    width:auto;
-    padding: .5rem 1rem;
 }
-.social-media{
-    width: 100%;
-}
-a{
-    text-decoration: none;
-}
-
-.contact{
+.contactInfo{
     padding: 5%;
 }
-.contact ul{
+.contactInfo ul{
     position: relative;
 }
-.contact ul li{
+.contactInfo ul li{
     position: relative;
-    list-style:none;
-    margin: 10px;
+    list-style: none;
+    margin: 10px 0;
     cursor: pointer;
 }
-.contact ul li .icon{
+.contactInfo ul li .icon{
     display: inline-block;
-    width: 25px;
+    width: 30px;
     font-size: 18px;
     color: #03a9f4;
 }
-
-.skill-progress{
-    font-size: 0.80rem;
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+.skills{
+    font-size: 0.75rem;
     text-align: center;
     text-transform: uppercase;
     padding: 1rem 0.5rem;
 }
 .skill-name{
-    font-size: 0.70rem;
-    font-weight: 0.70rem;
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
     text-align: left;
     padding-bottom: 0.5rem;
+}
+.progress-bar {
+    border: 1px  solid white;
+    /* background-color: #fff; */
+    height: 4px;
+  }
+  
+.progress-bar>div {
+    border: 0.5px  solid white;
+    background-color: #fff;
+    height: 4px;
 }
 .skill-item{
     padding: 5px;
 }
-.progress-bar{
-    border: 1px  solid white ;
-    background-color: #fff;
-    height: 4px;
-}
 
-/* .progress-bar>div{
-    border: 1px  solid white;
-    background-color: #fff;
-    height: 4px;
-} */
-.right-section{
-    grid-column: span 1/ span 2;
-    background-color: #f7f7f7;
-    width: 900px;
-}
 .right-main-content{
     padding: 2rem 3rem;
 }
@@ -123,29 +120,31 @@ a{
     padding: 0.5rem;
     letter-spacing: 1px;
 }
-
 .para{
     padding: 0.5rem;
 }
 .box{
     display: flex;
 }
-.box > .text{
+.box>.text{
     padding: 0.5rem;
 }
-h5{
-    padding: 3px;
+.box>.text{
+    padding: 0.5rem;
 }
 h6{
-    /*     margin-top: 10px; */
-  padding: 5px;
+    margin-top: 10px;
 }
 .box .year{
     min-width: 150px;
 }
-@media screen and(max-width:674px) {
-    .main-content{
-        grid-template-columns: repet(1, fr);
+.projects{
+    padding: 0.5rem;
+}
+
+@media (max-width: 673px){
+    .main-content {
+        grid-template-columns: repeat(1, 1fr);
         width: 90%;
         min-height: 1000px;
     }
